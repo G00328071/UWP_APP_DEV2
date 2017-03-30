@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>7a7214b9-8f2c-4165-9c43-b5d3f0bf3cb7</PackageIdentityName>
     <PackageIdentityPublisher>CN=Alan Doyle</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Alan Doyle\documents\visual studio 2015\Projects\MyWeather\MyWeather\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Alan Doyle\Documents\visual studio 2015\Projects\MyWeather\MyWeather\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -25,16 +25,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Alan Doyle\documents\visual studio 2015\Projects\MyWeather\MyWeather\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Alan Doyle\Documents\visual studio 2015\Projects\MyWeather\MyWeather\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-03-26T14:02:01.957</Modified>
+      <Modified>2017-03-29T21:26:56.943</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Alan Doyle\documents\visual studio 2015\Projects\MyWeather\MyWeather\bin\x86\Debug\MyWeather.exe">
+    <AppxPackagedFile Include="C:\Users\Alan Doyle\Documents\visual studio 2015\Projects\MyWeather\MyWeather\bin\x86\Debug\MyWeather.exe">
       <PackagePath>entrypoint\MyWeather.exe</PackagePath>
-      <Modified>2017-03-26T14:01:59.880</Modified>
+      <Modified>2017-03-29T21:26:55.695</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alan Doyle\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -456,131 +456,131 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2015-07-22T22:11:12.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alan Doyle\documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\images\01d.png">
+    <AppxPackagedFile Include="C:\Users\Alan Doyle\Documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\images\01d.png">
       <PackagePath>Assets\images\01d.png</PackagePath>
       <Modified>2017-03-21T22:41:09.250</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alan Doyle\documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\images\01n.png">
+    <AppxPackagedFile Include="C:\Users\Alan Doyle\Documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\images\01n.png">
       <PackagePath>Assets\images\01n.png</PackagePath>
       <Modified>2017-03-21T22:41:09.524</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alan Doyle\documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\images\02d.png">
+    <AppxPackagedFile Include="C:\Users\Alan Doyle\Documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\images\02d.png">
       <PackagePath>Assets\images\02d.png</PackagePath>
       <Modified>2017-03-21T22:41:09.790</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alan Doyle\documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\images\02n.png">
+    <AppxPackagedFile Include="C:\Users\Alan Doyle\Documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\images\02n.png">
       <PackagePath>Assets\images\02n.png</PackagePath>
       <Modified>2017-03-21T22:41:10.064</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alan Doyle\documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\images\03d.png">
+    <AppxPackagedFile Include="C:\Users\Alan Doyle\Documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\images\03d.png">
       <PackagePath>Assets\images\03d.png</PackagePath>
       <Modified>2017-03-21T22:41:03.024</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alan Doyle\documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\images\03n.png">
+    <AppxPackagedFile Include="C:\Users\Alan Doyle\Documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\images\03n.png">
       <PackagePath>Assets\images\03n.png</PackagePath>
       <Modified>2017-03-21T22:41:04.416</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alan Doyle\documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\images\04d.png">
+    <AppxPackagedFile Include="C:\Users\Alan Doyle\Documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\images\04d.png">
       <PackagePath>Assets\images\04d.png</PackagePath>
       <Modified>2017-03-21T22:41:05.353</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alan Doyle\documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\images\04n.png">
+    <AppxPackagedFile Include="C:\Users\Alan Doyle\Documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\images\04n.png">
       <PackagePath>Assets\images\04n.png</PackagePath>
       <Modified>2017-03-21T22:41:05.595</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alan Doyle\documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\images\09d.png">
+    <AppxPackagedFile Include="C:\Users\Alan Doyle\Documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\images\09d.png">
       <PackagePath>Assets\images\09d.png</PackagePath>
       <Modified>2017-03-21T22:41:05.832</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alan Doyle\documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\images\09n.png">
+    <AppxPackagedFile Include="C:\Users\Alan Doyle\Documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\images\09n.png">
       <PackagePath>Assets\images\09n.png</PackagePath>
       <Modified>2017-03-21T22:41:06.099</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alan Doyle\documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\images\10d.png">
+    <AppxPackagedFile Include="C:\Users\Alan Doyle\Documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\images\10d.png">
       <PackagePath>Assets\images\10d.png</PackagePath>
       <Modified>2017-03-21T22:41:06.317</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alan Doyle\documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\images\10n.png">
+    <AppxPackagedFile Include="C:\Users\Alan Doyle\Documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\images\10n.png">
       <PackagePath>Assets\images\10n.png</PackagePath>
       <Modified>2017-03-21T22:41:06.785</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alan Doyle\documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\images\11d.png">
+    <AppxPackagedFile Include="C:\Users\Alan Doyle\Documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\images\11d.png">
       <PackagePath>Assets\images\11d.png</PackagePath>
       <Modified>2017-03-21T22:41:07.170</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alan Doyle\documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\images\11n.png">
+    <AppxPackagedFile Include="C:\Users\Alan Doyle\Documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\images\11n.png">
       <PackagePath>Assets\images\11n.png</PackagePath>
       <Modified>2017-03-21T22:41:07.513</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alan Doyle\documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\images\13d.png">
+    <AppxPackagedFile Include="C:\Users\Alan Doyle\Documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\images\13d.png">
       <PackagePath>Assets\images\13d.png</PackagePath>
       <Modified>2017-03-21T22:41:07.904</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alan Doyle\documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\images\13n.png">
+    <AppxPackagedFile Include="C:\Users\Alan Doyle\Documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\images\13n.png">
       <PackagePath>Assets\images\13n.png</PackagePath>
       <Modified>2017-03-21T22:41:08.234</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alan Doyle\documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\images\50d.png">
+    <AppxPackagedFile Include="C:\Users\Alan Doyle\Documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\images\50d.png">
       <PackagePath>Assets\images\50d.png</PackagePath>
       <Modified>2017-03-21T22:41:08.586</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alan Doyle\documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\images\50n.png">
+    <AppxPackagedFile Include="C:\Users\Alan Doyle\Documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\images\50n.png">
       <PackagePath>Assets\images\50n.png</PackagePath>
       <Modified>2017-03-21T22:41:08.945</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alan Doyle\documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Alan Doyle\Documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2015-09-20T17:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alan Doyle\documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Alan Doyle\Documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T17:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alan Doyle\documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Alan Doyle\Documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T17:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alan Doyle\documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Alan Doyle\Documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T17:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alan Doyle\documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\Alan Doyle\Documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T17:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alan Doyle\documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\Alan Doyle\Documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T17:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alan Doyle\documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Alan Doyle\Documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T17:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alan Doyle\documents\visual studio 2015\Projects\MyWeather\MyWeather\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\Alan Doyle\Documents\visual studio 2015\Projects\MyWeather\MyWeather\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2017-02-28T17:39:41.845</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alan Doyle\documents\visual studio 2015\Projects\MyWeather\MyWeather\bin\x86\Debug\MyWeather.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Alan Doyle\Documents\visual studio 2015\Projects\MyWeather\MyWeather\bin\x86\Debug\MyWeather.xr.xml">
       <PackagePath>MyWeather.xr.xml</PackagePath>
-      <Modified>2017-03-26T14:01:59.481</Modified>
+      <Modified>2017-03-29T21:26:55.321</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2017-02-18T04:06:13.954</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alan Doyle\documents\visual studio 2015\Projects\MyWeather\MyWeather\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Alan Doyle\Documents\visual studio 2015\Projects\MyWeather\MyWeather\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2017-03-26T14:02:01.445</Modified>
+      <Modified>2017-03-29T21:26:56.558</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alan Doyle\documents\visual studio 2015\Projects\MyWeather\MyWeather\bin\x86\Debug\Core\MyWeather.exe">
+    <AppxPackagedFile Include="C:\Users\Alan Doyle\Documents\visual studio 2015\Projects\MyWeather\MyWeather\bin\x86\Debug\Core\MyWeather.exe">
       <PackagePath>MyWeather.exe</PackagePath>
-      <Modified>2017-03-26T14:02:01.938</Modified>
+      <Modified>2017-03-29T21:26:56.918</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

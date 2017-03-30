@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyWeather.Notes;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,6 +23,11 @@ namespace MyWeather
     /// </summary>
     sealed partial class App : Application
     {
+        //give access to the noteSrc class from the notes folder
+        public static NoteSrc Notes;
+
+
+
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().
@@ -30,6 +36,8 @@ namespace MyWeather
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+            //instance of the NoteSrc class
+            Notes = new NoteSrc();
         }
 
         /// <summary>

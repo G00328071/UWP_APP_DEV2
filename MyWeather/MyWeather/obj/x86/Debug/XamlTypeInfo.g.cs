@@ -132,17 +132,23 @@ namespace MyWeather.MyWalkersFriend_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[4];
-            _typeNameTable[0] = "MyWeather.MainPage";
+            _typeNameTable = new string[7];
+            _typeNameTable[0] = "MyWeather.AddNote";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "MyWeather.Map";
+            _typeNameTable[3] = "MyWeather.MainPage";
+            _typeNameTable[4] = "MyWeather.Map";
+            _typeNameTable[5] = "MyWeather.myNote";
+            _typeNameTable[6] = "MyWeather.ViewMapNote";
 
-            _typeTable = new global::System.Type[4];
-            _typeTable[0] = typeof(global::MyWeather.MainPage);
+            _typeTable = new global::System.Type[7];
+            _typeTable[0] = typeof(global::MyWeather.AddNote);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::MyWeather.Map);
+            _typeTable[3] = typeof(global::MyWeather.MainPage);
+            _typeTable[4] = typeof(global::MyWeather.Map);
+            _typeTable[5] = typeof(global::MyWeather.myNote);
+            _typeTable[6] = typeof(global::MyWeather.ViewMapNote);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -177,8 +183,11 @@ namespace MyWeather.MyWalkersFriend_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_MainPage() { return new global::MyWeather.MainPage(); }
-        private object Activate_3_Map() { return new global::MyWeather.Map(); }
+        private object Activate_0_AddNote() { return new global::MyWeather.AddNote(); }
+        private object Activate_3_MainPage() { return new global::MyWeather.MainPage(); }
+        private object Activate_4_Map() { return new global::MyWeather.Map(); }
+        private object Activate_5_myNote() { return new global::MyWeather.myNote(); }
+        private object Activate_6_ViewMapNote() { return new global::MyWeather.ViewMapNote(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -190,9 +199,9 @@ namespace MyWeather.MyWalkersFriend_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  MyWeather.MainPage
+            case 0:   //  MyWeather.AddNote
                 userType = new global::MyWeather.MyWalkersFriend_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_MainPage;
+                userType.Activator = Activate_0_AddNote;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -205,9 +214,30 @@ namespace MyWeather.MyWalkersFriend_XamlTypeInfo
                 xamlType = new global::MyWeather.MyWalkersFriend_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  MyWeather.Map
+            case 3:   //  MyWeather.MainPage
                 userType = new global::MyWeather.MyWalkersFriend_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_Map;
+                userType.Activator = Activate_3_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 4:   //  MyWeather.Map
+                userType = new global::MyWeather.MyWalkersFriend_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_4_Map;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 5:   //  MyWeather.myNote
+                userType = new global::MyWeather.MyWalkersFriend_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_5_myNote;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 6:   //  MyWeather.ViewMapNote
+                userType = new global::MyWeather.MyWalkersFriend_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_6_ViewMapNote;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

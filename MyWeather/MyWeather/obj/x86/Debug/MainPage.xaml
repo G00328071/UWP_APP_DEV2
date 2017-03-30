@@ -12,24 +12,25 @@
         <Button  FontFamily="Segoe MDL2 Assets" Content="&#xE700;">
             <Button.Flyout>
                 <MenuFlyout>
-                    <MenuFlyoutItem x:ConnectionId='8' Text="Show Weather"                      />
-                    <MenuFlyoutItem x:ConnectionId='9' Text="Show Map"                               />
-                    <MenuFlyoutItem Text="item3"/>
+                    <MenuFlyoutItem x:ConnectionId='9' Text="Show Weather"                      />
+                    <MenuFlyoutItem x:ConnectionId='10' Text="Show Map"                               />
+                    <MenuFlyoutItem x:ConnectionId='11' Text="Make Note"                                 />
                 </MenuFlyout>
             </Button.Flyout>
         </Button>
 
 
-        <StackPanel Orientation="Vertical" Margin="0,80,0,0">
-            <TextBlock x:ConnectionId='1' Name="tlbResult_pressure"/>
-            <TextBlock x:ConnectionId='2' Name="tlbResult_wind"/>
-            <TextBlock x:ConnectionId='3' x:Name="tlbResult_temp"/>
-            <TextBlock x:ConnectionId='4' Name="tlbResult_sunrise"/>
-            <TextBlock x:ConnectionId='5' Name="tlbResult_sunset"/>
-            <TextBlock x:ConnectionId='6' Name="tlbError"/>
+        <StackPanel HorizontalAlignment="Center" Orientation="Vertical" Margin="0,80,0,0">
+            <TextBlock x:ConnectionId='1' Name="tlbResult_location"/>
+            <TextBlock x:ConnectionId='2' Name="tlbResult_pressure"/>
+            <TextBlock x:ConnectionId='3' Name="tlbResult_wind"/>
+            <TextBlock x:ConnectionId='4' x:Name="tlbResult_temp"/>
+            <TextBlock x:ConnectionId='5' Name="tlbResult_sunrise"/>
+            <TextBlock x:ConnectionId='6' Name="tlbResult_sunset"/>
+            <TextBlock x:ConnectionId='7' Name="tlbError"/>
 
 
-            <Image x:ConnectionId='7' Name="ImageResult" Width="200" Height="200"/>
+            <Image x:ConnectionId='8' Name="ImageResult" Width="200" Height="200"/>
 
         </StackPanel>
     </StackPanel>

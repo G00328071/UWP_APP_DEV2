@@ -53,5 +53,10 @@ namespace MyWeather
         {
             this.Frame.Navigate(typeof(MainPage));
         }
+
+        private void MenuFlyoutItem_Tapped_1(object sender, TappedRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(myNote));
+        }
     }
 }

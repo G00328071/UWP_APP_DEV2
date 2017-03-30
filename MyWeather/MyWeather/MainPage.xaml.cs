@@ -40,8 +40,10 @@ namespace MyWeather
 
             this.Frame.Navigate(typeof(Map));
 
-
-
+        }
+        private void MenuFlyoutItem_Tapped_1(object sender, TappedRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(myNote));
         }
 
         public void Weather_Loaded(object sender, RoutedEventArgs e)
@@ -57,7 +59,7 @@ namespace MyWeather
                     showCurrentWeather();
                     break;
 
-                case "Compass":
+                case "map":
                     break;
 
                 default:
@@ -68,23 +70,28 @@ namespace MyWeather
 
         private async void showCurrentWeather()
         {
-            var position = await LocationManager.GetLocation();
+           
             try
             {
+                var position = await LocationManager.GetLocation();
+                tlbError.Text = LocationManager.statusMessage;
                 RootObject myWeather = await OpenWeatherMapProxy.GetWeather(position.Coordinate.Point.Position.Latitude, position.Coordinate.Point.Position.Longitude);
 
                 //icon url given by API
+                tlbError.Text = "";
                 string icon = String.Format("ms-appx:///Assets/images/{0}.png", myWeather.weather[0].icon);
                 ImageResult.Source = new BitmapImage(new Uri(icon, UriKind.Absolute));
-                tlbResult_temp.Text = myWeather.name + " Temp - " + (myWeather.main.temp).ToString() + "C° " + myWeather.weather[0].description;
-                tlbResult_pressure.Text = myWeather.name + " Pressure - " + (myWeather.main.pressure).ToString() + " : pascals";
-                tlbResult_wind.Text = myWeather.name + " Wind - " + (myWeather.wind.speed).ToString() + " : mph :: " + " direction " + (myWeather.wind.deg) + "°";
-                tlbResult_sunrise.Text = myWeather.name + " Sunrise :" + String.Format("{0:d/M/yyyy HH:mm:ss}", new System.DateTime(1970, 1, 1, 0, 0, 0, 0).AddSeconds(myWeather.sys.sunrise));
-                tlbResult_sunset.Text = myWeather.name + " Sunset :" + String.Format("{0:d/M/yyyy HH:mm:ss}", new System.DateTime(1970, 1, 1, 0, 0, 0, 0).AddSeconds(myWeather.sys.sunset));
+                tlbResult_location.Text = "Your present location is : "+ myWeather.name;
+                tlbResult_temp.Text =  " Temp - " + (myWeather.main.temp).ToString() + "C° " + myWeather.weather[0].description;
+                tlbResult_pressure.Text =  " Pressure - " + (myWeather.main.pressure).ToString() + " : pascals";
+                tlbResult_wind.Text =  " Wind - " + (myWeather.wind.speed).ToString() + " : mph :: " + " direction " + (myWeather.wind.deg) + "°";
+                tlbResult_sunrise.Text = " Sunrise :" + String.Format("{0:d/M/yyyy HH:mm:ss}", new System.DateTime(1970, 1, 1, 0, 0, 0, 0).AddSeconds(myWeather.sys.sunrise));
+                tlbResult_sunset.Text =  " Sunset :" + String.Format("{0:d/M/yyyy HH:mm:ss}", new System.DateTime(1970, 1, 1, 0, 0, 0, 0).AddSeconds(myWeather.sys.sunset));
             }
             catch (Exception)
             {
-                tlbError.Text = "Sorry Gps location service not available";
+
+                tlbError.Text = LocationManager.statusMessage; 
                 ImageResult.Source = null;
                 tlbResult_temp.Text = "";
                 tlbResult_pressure.Text = "";
@@ -94,6 +101,6 @@ namespace MyWeather
             }
         }
 
-       
+        
     }
 }

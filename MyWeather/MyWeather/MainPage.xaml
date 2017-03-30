@@ -14,13 +14,14 @@
                 <MenuFlyout>
                     <MenuFlyoutItem Text="Show Weather" Tapped="Button_Click"/>
                     <MenuFlyoutItem Text="Show Map" Tapped="MenuFlyoutItem_Tapped"/>
-                    <MenuFlyoutItem Text="item3"/>
+                    <MenuFlyoutItem Text="Make Note" Tapped="MenuFlyoutItem_Tapped_1"/>
                 </MenuFlyout>
             </Button.Flyout>
         </Button>
 
 
-        <StackPanel Orientation="Vertical" Margin="0,80,0,0">
+        <StackPanel HorizontalAlignment="Center" Orientation="Vertical" Margin="0,80,0,0">
+            <TextBlock Name="tlbResult_location"/>
             <TextBlock Name="tlbResult_pressure"/>
             <TextBlock Name="tlbResult_wind"/>
             <TextBlock x:Name="tlbResult_temp"/>

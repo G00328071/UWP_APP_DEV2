@@ -22,6 +22,7 @@
                 <Button.Flyout>
                     <MenuFlyout>
                         <MenuFlyoutItem Text="Home" Tapped="MenuFlyoutItem_Tapped"/>
+                        <MenuFlyoutItem Text="Make Note" Tapped="MenuFlyoutItem_Tapped_1"/>
                     </MenuFlyout>
                 </Button.Flyout>
             </Button>
