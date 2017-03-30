@@ -30,6 +30,7 @@
 
             
                 <Maps:MapControl x:ConnectionId='1' x:Name="myMap" 
+                                 MapServiceToken="TOfdeDRJwGImuiaL7W88~SlMn6bqFU6GCmOupV2lB-g~AsoKvGZZisSkTudn4cs2nwQzmGl7eS58HojnUjiskKBwBEYkH-7yUV7sRAXsADIr"
                               ZoomLevel="{Binding ElementName=zoomSlider,Path=Value, Mode=TwoWay}"
                          Grid.Row="1"
                                                   

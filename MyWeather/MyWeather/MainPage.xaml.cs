@@ -14,6 +14,8 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 using Windows.Devices.Geolocation;
+using Windows.ApplicationModel.Background;
+using Windows.Storage;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -46,8 +48,11 @@ namespace MyWeather
             this.Frame.Navigate(typeof(myNote));
         }
 
+       
+
         public void Weather_Loaded(object sender, RoutedEventArgs e)
         {
+
             string sValue = "Weather";
             // check settings to see what the user looked at last.
             // example of settings in the backgroundtasks example in class

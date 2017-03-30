@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Devices.Geolocation;
+using Windows.UI.Xaml.Controls.Maps;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Popups;
@@ -15,6 +16,9 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.Storage.Streams;
+
+
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -39,9 +43,10 @@ namespace MyWeather
         //private async  void AddNote_Loaded(object setter, NavigationEventArgs e)
         protected async override void OnNavigatedTo(NavigationEventArgs e)
         {
-           
-           
+
+
             Map.MapServiceToken = "TOfdeDRJwGImuiaL7W88~SlMn6bqFU6GCmOupV2lB-g~AsoKvGZZisSkTudn4cs2nwQzmGl7eS58HojnUjiskKBwBEYkH-7yUV7sRAXsADIr";
+            Map.Style = MapStyle.AerialWithRoads;
             Geopoint pos;
             if (e.Parameter == null)
             {
@@ -69,7 +74,14 @@ namespace MyWeather
                 myPos.Longitude = myText.Longitude;
 
                 pos = new Geopoint(myPos);
-                
+                MapIcon icon = new MapIcon();
+                icon.Location = pos;
+                icon.NormalizedAnchorPoint = new Point(0.5, 1.0);
+                icon.Title = "Center Point";
+                icon.Image = RandomAccessStreamReference.CreateFromUri(new Uri("ms-appx:///Assets/Pin.png"));
+                icon.ZIndex = 0;
+                Map.MapElements.Add(icon);
+                Map.Center = pos;
 
 
             }
@@ -98,6 +110,9 @@ namespace MyWeather
 
                 await message.ShowAsync();
 
+                //drop a ancor pin to mark center point
+               
+
             }
             else
             {
@@ -109,6 +124,9 @@ namespace MyWeather
                 note.Latitude = Map.Center.Position.Latitude;
                 note.Longitude = Map.Center.Position.Longitude;
                 App.Notes.AddNote(note);
+
+               
+
                 this.Frame.Navigate(typeof(myNote));
             }
             
@@ -129,5 +147,7 @@ namespace MyWeather
             }
 
         }
+
+      
     }
 }

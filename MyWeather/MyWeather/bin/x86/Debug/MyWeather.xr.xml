@@ -33,6 +33,7 @@
       <RootProperty Name="HorizontalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Maps.MapControl">
+      <RootProperty Name="MapServiceToken" />
       <RootProperty Name="ZoomLevel" />
       <RootEvent Name="Loaded" />
       <RootEvent Name="MapTapped" />

@@ -394,6 +394,9 @@
     <AppxPackagedFile Include="C:\Users\Alan Doyle\Documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\images\50n.png">
       <PackagePath>Assets\images\50n.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alan Doyle\Documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\Pin.png">
+      <PackagePath>Assets\Pin.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alan Doyle\Documents\visual studio 2015\Projects\MyWeather\MyWeather\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
