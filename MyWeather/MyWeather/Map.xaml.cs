@@ -33,6 +33,7 @@ namespace MyWeather
         public async  void myMap_Loaded(object sender, RoutedEventArgs e)
         {
             //myMap.MapServiceToken = "TOfdeDRJwGImuiaL7W88~SlMn6bqFU6GCmOupV2lB-g~AsoKvGZZisSkTudn4cs2nwQzmGl7eS58HojnUjiskKBwBEYkH-7yUV7sRAXsADIr";
+            // can also be initalised on the xaml page.
             var location = new Geolocator();
             location.DesiredAccuracyInMeters = 50;
 

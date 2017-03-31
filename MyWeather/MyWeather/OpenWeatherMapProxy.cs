@@ -17,6 +17,7 @@ namespace MyWeather
         {
             var http = new HttpClient();
             var url = String.Format("http://api.openweathermap.org/data/2.5/weather?lat={0}&lon={1}&appid=7eb6ce7e364bb14fa520bbf945608263&units=metric", lat, lon);
+
             var response = await http.GetAsync(url);
           
             var result = await response.Content.ReadAsStringAsync();

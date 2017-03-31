@@ -44,8 +44,9 @@ namespace MyWeather
         protected async override void OnNavigatedTo(NavigationEventArgs e)
         {
 
-
+            //map service token from bing maps
             Map.MapServiceToken = "TOfdeDRJwGImuiaL7W88~SlMn6bqFU6GCmOupV2lB-g~AsoKvGZZisSkTudn4cs2nwQzmGl7eS58HojnUjiskKBwBEYkH-7yUV7sRAXsADIr";
+            //set map style for add note feature.
             Map.Style = MapStyle.AerialWithRoads;
             Geopoint pos;
             if (e.Parameter == null)
@@ -67,17 +68,21 @@ namespace MyWeather
                 myText =(MyMapNote)e.Parameter;
                 titleTextBox.Text = myText.Title;
                 noteTextBox.Text = myText.Note;
+                //if viewing =true then we are in the delete mode
+                // and add button content will change to delete
+                // and the function will change to a delete function
                 addBtn.Content = "Delete";
 
                 var myPos = new Windows.Devices.Geolocation.BasicGeoposition();
                 myPos.Latitude = myText.Latitude;
                 myPos.Longitude = myText.Longitude;
 
+                //drop a ancor pin to mark center point
                 pos = new Geopoint(myPos);
                 MapIcon icon = new MapIcon();
                 icon.Location = pos;
                 icon.NormalizedAnchorPoint = new Point(0.5, 1.0);
-                icon.Title = "Center Point";
+                icon.Title = "Note Location";
                 icon.Image = RandomAccessStreamReference.CreateFromUri(new Uri("ms-appx:///Assets/Pin.png"));
                 icon.ZIndex = 0;
                 Map.MapElements.Add(icon);
@@ -99,7 +104,7 @@ namespace MyWeather
             if (viewing)
             {
                 //we want to delete the note
-                //ask the user if the really want to delete the note
+                //ask the user if they really want to delete the note
                 var message = new Windows.UI.Popups.MessageDialog("Do you want to Delete!");
                 message.Commands.Add(new UICommand("Delete", new UICommandInvokedHandler(this.CommandInvokedHandler)));
                 message.Commands.Add(new UICommand("Cancel", new UICommandInvokedHandler(this.CommandInvokedHandler)));
@@ -110,7 +115,7 @@ namespace MyWeather
 
                 await message.ShowAsync();
 
-                //drop a ancor pin to mark center point
+               
                
 
             }
@@ -120,7 +125,9 @@ namespace MyWeather
                 MyMapNote note = new MyMapNote();
                 note.Title = titleTextBox.Text;
                 note.Note = noteTextBox.Text;
+                //date time set but not used.
                 note.Created = DateTime.Now;
+                //setting long,lat fro center position
                 note.Latitude = Map.Center.Position.Latitude;
                 note.Longitude = Map.Center.Position.Longitude;
                 App.Notes.AddNote(note);

@@ -52,25 +52,7 @@ namespace MyWeather
 
         public void Weather_Loaded(object sender, RoutedEventArgs e)
         {
-
-            string sValue = "Weather";
-            // check settings to see what the user looked at last.
-            // example of settings in the backgroundtasks example in class
-            // applicationdata.current.localsettings value
-            // swith on the value
-            switch (sValue)
-            {
-                case "Weather":
-                    showCurrentWeather();
-                    break;
-
-                case "map":
-                    break;
-
-                default:
-                    break;
-            }
-
+            showCurrentWeather();
         }
 
         private async void showCurrentWeather()
@@ -82,10 +64,11 @@ namespace MyWeather
                 tlbError.Text = LocationManager.statusMessage;
                 RootObject myWeather = await OpenWeatherMapProxy.GetWeather(position.Coordinate.Point.Position.Latitude, position.Coordinate.Point.Position.Longitude);
 
-                //icon url given by API
+                //icon name given by API then referenced to the Assets /images folder
                 tlbError.Text = "";
                 string icon = String.Format("ms-appx:///Assets/images/{0}.png", myWeather.weather[0].icon);
                 ImageResult.Source = new BitmapImage(new Uri(icon, UriKind.Absolute));
+                //present weather data to screen
                 tlbResult_location.Text = "Your present location is : "+ myWeather.name;
                 tlbResult_temp.Text =  " Temp - " + (myWeather.main.temp).ToString() + "C° " + myWeather.weather[0].description;
                 tlbResult_pressure.Text =  " Pressure - " + (myWeather.main.pressure).ToString() + " : pascals";
@@ -95,7 +78,7 @@ namespace MyWeather
             }
             catch (Exception)
             {
-
+                //something goes wrong all tables set to null
                 tlbError.Text = LocationManager.statusMessage; 
                 ImageResult.Source = null;
                 tlbResult_temp.Text = "";

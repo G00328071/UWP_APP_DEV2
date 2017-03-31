@@ -43,6 +43,8 @@ namespace MyWeather
 
         private void ListView_ItemClick(object sender, ItemClickEventArgs e)
         {
+            //sets the note itself as clickable.
+            // and the event (e) is now passable to the other cs pages
            this.Frame.Navigate(typeof(AddNote), e.ClickedItem);
         }
 
