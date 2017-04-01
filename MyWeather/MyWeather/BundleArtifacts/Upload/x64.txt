@@ -1,0 +1,2 @@
+MainPackage=C:\Users\Alan Doyle\Desktop\New folder\UWP_APP_DEV2\MyWeather\MyWeather\bin\x64\Release\Upload\MyWalkersFriend_1.1.0.0_x64.appx
+SymbolPackage=C:\Users\Alan Doyle\Desktop\New folder\UWP_APP_DEV2\MyWeather\MyWeather\AppPackages\MyWalkersFriend_1.1.0.0\MyWalkersFriend_1.1.0.0_x64.appxsym

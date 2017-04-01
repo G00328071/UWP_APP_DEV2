@@ -1,0 +1,2 @@
+"/t:MyWeather.RootObject,MyWeather,json"
+"/t:System.Collections.ObjectModel.ObservableCollection`1[[MyWeather.Notes.MyMapNote,MyWeather]],System.ObjectModel,json"
