@@ -23,8 +23,6 @@ namespace MyWeather
     /// </summary>
     public sealed partial class Map : Page
     {
-       
-    
         public Map()
         {
             this.InitializeComponent();
@@ -39,10 +37,6 @@ namespace MyWeather
 
             var position = await location.GetGeopositionAsync();
               await myMap.TrySetViewAsync(position.Coordinate.Point,10D);
-
-           
-            
-            
         }
 
         private void myMap_MapTapped(Windows.UI.Xaml.Controls.Maps.MapControl sender, Windows.UI.Xaml.Controls.Maps.MapInputEventArgs args)

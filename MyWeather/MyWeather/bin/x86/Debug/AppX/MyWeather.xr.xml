@@ -33,6 +33,7 @@
       <RootProperty Name="HorizontalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Maps.MapControl">
+      <RootProperty Name="MapServiceToken" />
       <RootProperty Name="ZoomLevel" />
       <RootEvent Name="Loaded" />
       <RootEvent Name="MapTapped" />
@@ -42,10 +43,16 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="FontFamily" />
       <RootProperty Name="Flyout" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="FontSize" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="Text" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="Name" />
       <RootProperty Name="Style" />
       <RootProperty Name="Inlines" />
@@ -65,6 +72,7 @@
       <RootEvent Name="Tapped" />
     </RootType>
     <RootType FullName="MyWeather.AddNote" />
+    <RootType FullName="MyWeather.errorPage" />
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
       <RootProperty Name="Name" />

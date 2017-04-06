@@ -106,8 +106,8 @@ namespace MyWeather
                 //we want to delete the note
                 //ask the user if they really want to delete the note
                 var message = new Windows.UI.Popups.MessageDialog("Do you want to Delete!");
-                message.Commands.Add(new UICommand("Delete", new UICommandInvokedHandler(this.CommandInvokedHandler)));
-                message.Commands.Add(new UICommand("Cancel", new UICommandInvokedHandler(this.CommandInvokedHandler)));
+                message.Commands.Add(new UICommand("Delete", new UICommandInvokedHandler(CommandInvokedHandler)));
+                message.Commands.Add(new UICommand("Cancel", new UICommandInvokedHandler(CommandInvokedHandler)));
 
                 message.DefaultCommandIndex = 0;
 

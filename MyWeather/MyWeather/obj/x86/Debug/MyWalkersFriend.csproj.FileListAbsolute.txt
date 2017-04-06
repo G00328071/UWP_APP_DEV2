@@ -331,7 +331,6 @@ C:\Users\Alan Doyle\Desktop\New folder\UWP_APP_DEV2\MyWeather\MyWeather\bin\x86\
 C:\Users\Alan Doyle\Desktop\New folder\UWP_APP_DEV2\MyWeather\MyWeather\bin\x86\Debug\System.Xml.XDocument.dll
 C:\Users\Alan Doyle\Desktop\New folder\UWP_APP_DEV2\MyWeather\MyWeather\bin\x86\Debug\System.Xml.XmlDocument.dll
 C:\Users\Alan Doyle\Desktop\New folder\UWP_APP_DEV2\MyWeather\MyWeather\bin\x86\Debug\System.Xml.XmlSerializer.dll
-C:\Users\Alan Doyle\Desktop\New folder\UWP_APP_DEV2\MyWeather\MyWeather\obj\x86\Debug\MyWalkersFriend.csprojResolveAssemblyReference.cache
 C:\Users\Alan Doyle\Desktop\New folder\UWP_APP_DEV2\MyWeather\MyWeather\obj\x86\Debug\App.g.i.cs
 C:\Users\Alan Doyle\Desktop\New folder\UWP_APP_DEV2\MyWeather\MyWeather\obj\x86\Debug\App.g.cs
 C:\Users\Alan Doyle\Desktop\New folder\UWP_APP_DEV2\MyWeather\MyWeather\obj\x86\Debug\AddNote.g.i.cs

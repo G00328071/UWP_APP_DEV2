@@ -1,12 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using Windows.Devices.Geolocation;
+using Windows.UI.Popups;
+using Windows.UI.Xaml.Navigation;
 
 namespace MyWeather
 {
+
     public class LocationManager
     {
         public static string statusMessage { get; private set; }
@@ -15,18 +15,18 @@ namespace MyWeather
         {
             var accessStatus = await Geolocator.RequestAccessAsync();
 
-            
 
             switch (accessStatus)
             {
                 case GeolocationAccessStatus.Unspecified:
-                     statusMessage = "Location Unspecified Error";
+                    statusMessage = "Location Error Unspecified";
                     break;
                 case GeolocationAccessStatus.Allowed:
-                    statusMessage = "Location Access Allowed";
+                    statusMessage = "Location Services Turned On";
                     break;
                 case GeolocationAccessStatus.Denied:
-                    statusMessage = "Location Access denied";
+                    statusMessage = "Location Services Turned Off.\nPlease Turn Location Services On. \nReset App To Show Weather.";
+                   
                     break;
                 default:
                     break;
@@ -41,9 +41,12 @@ namespace MyWeather
 
         }
 
+       
+
+
 
     }
 
-
+   
 
 }

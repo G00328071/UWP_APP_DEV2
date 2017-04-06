@@ -81,6 +81,7 @@ namespace MyWeather
                 //something goes wrong all tables set to null
                 tlbError.Text = LocationManager.statusMessage; 
                 ImageResult.Source = null;
+                tlbResult_location.Text = "";
                 tlbResult_temp.Text = "";
                 tlbResult_pressure.Text = "";
                 tlbResult_wind.Text = "";
